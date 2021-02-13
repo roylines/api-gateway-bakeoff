@@ -2,11 +2,6 @@ on:
   push:
     paths:
       - "**"
-    branches:
-      - "master"
-  pull_request:
-    paths:
-      - "**"
 
 jobs:
   nodejs:
