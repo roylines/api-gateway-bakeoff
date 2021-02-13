@@ -9,7 +9,7 @@ provider:
 
 functions:
   health:
-    handler: index.handler
+    handler: health/index.handler
     events:
       - httpApi:
           method: GET
