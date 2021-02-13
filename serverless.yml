@@ -1,0 +1,26 @@
+service: bakeoff
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: prod
+  region: eu-west-2
+  lambdaHashingVersion: 20201221
+
+functions:
+  health:
+    handler: index.handler
+    events:
+      - httpApi:
+          method: GET
+          path: /health
+      - http:
+          method: GET
+          path: /health
+
+package:
+  individually: true
+
+plugins:
+  - serverless-webpack
+

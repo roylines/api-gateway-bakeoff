@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handler should not throw 1`] = `
+Object {
+  "body": "{\\"status\\":\\"OK\\"}",
+  "headers": Object {
+    "cache-control": "max-age=1",
+    "content-type": "application/json",
+  },
+  "statusCode": 200,
+}
+`;

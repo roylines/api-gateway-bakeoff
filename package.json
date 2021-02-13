@@ -1,0 +1,30 @@
+{
+  "name": "api-gateway-bakeoff",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "lambda-log": "*"
+  },
+  "devDependencies": {
+    "aws-sdk": "*",
+    "jest": "*",
+    "serverless": "*",
+    "serverless-plugin-scripts": "*",
+    "serverless-webpack": "*",
+    "webpack": "*"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  },
+  "author": "Roy Lines",
+  "license": "MIT"
+}
