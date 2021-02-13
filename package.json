@@ -18,7 +18,9 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy-test": "serverless deploy --noDeploy",
+    "deploy": "serverless deploy"
   },
   "jest": {
     "verbose": true,
