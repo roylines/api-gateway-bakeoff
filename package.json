@@ -20,7 +20,7 @@
   "scripts": {
     "test": "jest",
     "deploy-test": "serverless deploy --noDeploy",
-    "deploy": "serverless deploy"
+    "deploy": "serverless deploy",
     "remove": "serverless remove"
   },
   "jest": {
