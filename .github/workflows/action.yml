@@ -1,0 +1,22 @@
+on:
+  push:
+    paths:
+      - "**"
+    branches:
+      - "master"
+  pull_request:
+    paths:
+      - "**"
+
+jobs:
+  nodejs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - run: npm install
+      - run: npm test
+      - run: serverless deploy --noDeploy
